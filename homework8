@@ -1,0 +1,59 @@
+public interface Shape {
+    String getName();
+}
+
+public class Circle implements Shape{
+    private String name = "Circle";
+    @Override
+    public String getName() {
+        return name;
+    }
+
+}
+
+public class Triangle implements Shape{
+    private String name = "Triangle";
+
+    @Override
+    public String getName() {
+        return name;
+    }
+
+}
+
+public class Quad implements Shape{
+    private String name = "Quad";
+
+    @Override
+    public String getName() {
+        return name;
+    }
+}
+public class Rectangle implements Shape{
+    private String name = "Rectangle";
+
+    @Override
+    public String getName() {
+        return name;
+    }
+}
+
+public class Ellipse implements Shape{
+    private String name = "Ellipse";
+
+    @Override
+    public String getName() {
+        return name;
+    }
+}
+
+public interface FigurePrinter {
+    void print(Shape sh);
+}
+
+public class FigureConsolePrinter implements FigurePrinter{
+    @Override
+    public void print(Shape sh) {
+        System.out.println(sh.getName());
+    }
+}
